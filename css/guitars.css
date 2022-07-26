@@ -1,0 +1,814 @@
+/*
+
+PALETA DE COLORES
+
+#EFEFEF White-Gray
+#F66B0E Orange
+#205375 Royal Blue
+#112B3C Dark blue
+*/
+
+/*Reestablece los valores nulos para márgenes, bordes y espaciamientos en cualquier navegador*/
+@media screen and (min-width:320px){
+    *{
+        padding: 0;
+        border:0;
+        margin:0;
+    }
+    .grid{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "nav"
+        "hollow"
+        "semiHollow"
+        "solidGuitar"
+        "acoustic"
+        "footer";
+        grid-template-columns: 100vw;
+        grid-template-rows: 4vh 4vh 25vh 25vh 25vh 25vh 5vh;
+    }
+    .bg{
+        background-color: #205375;
+    }
+    .header{
+        display: flex;
+        grid-area:header;
+        background-color: #112B3C;
+        align-items: flex-end;
+        justify-content: center;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 2vw;
+        font-weight: lighter;
+        color:#F66B0E;
+    }
+    .header img{
+        width:11vw;
+    }
+    .nav{
+        grid-area:nav;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color:#112B3C;
+    }
+    /*Quita el subrayado del texto en la barra de navegación */
+    nav li a{
+        text-decoration:none;
+        padding: 0vw 3vw 0vw 3vw;
+        color:#EFEFEF;
+        text-align: center;
+        font-size: 3vw;
+    }
+    /*Quita los bullets de la barra de navegación y centra el navList con respecto al box que los contiene*/
+    .navList{
+        list-style:none;
+        text-align: center; 
+        display: flex; 
+        align-items: center;
+        justify-content: space-around;
+    }
+    /*Se definen las características de los list <li>, como espaciamiento con respecto al borde, color, tipo y tamaño de la fuente, color de fondo del box*/
+    .navList li{
+        font-size: 1.5em;
+        font-family: 'Bebas', sans-serif;
+        font-weight:bold;
+    }
+    h2{
+        font-size: 3vw;
+        font-family: 'Bebas', sans-serif;
+        font-weight:bold;
+        padding-bottom:2%;
+        color:#EFEFEF;
+    }
+    .hollow{
+        display:flex;
+        grid-area: hollow;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    .hollow img{
+        width:60vw;
+    }
+    .empty{
+        grid-area:empty;
+    }
+    .semiHollow{
+        display:flex;
+        grid-area: semiHollow;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .semiHollow img{
+        width:60vw;
+    }
+    .solidGuitar{
+        display:flex;
+        grid-area:solidGuitar;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .solidGuitar img{
+        width:60vw;
+    }
+    .acoustic{
+        display:flex;
+        grid-area:acoustic;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .acoustic img{
+        width:60vw;
+    }
+    .footer{
+        grid-area:footer;
+        background-color: #112B3C;
+        font-family: 'Montserrat',sans-serif;
+        color:#EFEFEF;
+        display: flex;
+        justify-content: center;
+    }
+    footer a img{
+        width:4vw;
+        padding:3%;
+    }
+    .footer li{
+        text-decoration: none;
+        list-style: none;
+        padding:7%;
+    }
+    .socialMedia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (min-width:425px){
+    *{
+        padding: 0;
+        border:0;
+        margin:0;
+    }
+    .grid{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "nav"
+        "hollow"
+        "semiHollow"
+        "solidGuitar"
+        "acoustic"
+        "footer";
+        grid-template-columns: 100vw;
+        grid-template-rows: 4vh 4vh 25vh 25vh 25vh 25vh 5vh;
+    }
+    .bg{
+        background-color: #205375;
+    }
+    .header{
+        display: flex;
+        grid-area:header;
+        background-color: #112B3C;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 2vw;
+        font-weight: lighter;
+        color:#F66B0E;
+    }
+    .header img{
+        width:10vw;
+    }
+    .nav{
+        grid-area:nav;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color:#112B3C;
+    }
+    /*Quita el subrayado del texto en la barra de navegación */
+    nav li a{
+        text-decoration:none;
+        padding: 0vw 3vw 0vw 3vw;
+        color:#EFEFEF;
+        text-align: center;
+        font-size: 3vw;
+    }
+    /*Quita los bullets de la barra de navegación y centra el navList con respecto al box que los contiene*/
+    .navList{
+        list-style:none;
+        text-align: center; 
+        display: flex; 
+        align-items: center;
+        justify-content: space-around;
+    }
+    /*Se definen las características de los list <li>, como espaciamiento con respecto al borde, color, tipo y tamaño de la fuente, color de fondo del box*/
+    .navList li{
+        font-size: 1.5em;
+        font-family: 'Bebas', sans-serif;
+        font-weight:bold;
+    }
+    h2{
+        font-size: 3vw;
+        font-family: 'Bebas', sans-serif;
+        font-weight:bold;
+        padding-bottom:2%;
+        color:#EFEFEF;
+    }
+    .hollow{
+        display:flex;
+        grid-area: hollow;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    .hollow img{
+        width:55vw;
+    }
+    .empty{
+        grid-area:empty;
+    }
+    .semiHollow{
+        display:flex;
+        grid-area: semiHollow;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .semiHollow img{
+        width:55vw;
+    }
+    .solidGuitar{
+        display:flex;
+        grid-area:solidGuitar;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .solidGuitar img{
+        width:55vw;
+    }
+    .acoustic{
+        display:flex;
+        grid-area:acoustic;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .acoustic img{
+        width:55vw;
+    }
+    .footer{
+        grid-area:footer;
+        background-color: #112B3C;
+        font-family: 'Montserrat',sans-serif;
+        color:#EFEFEF;
+        display: flex;
+        justify-content: center;
+    }
+    footer a img{
+        width:4vw;
+        padding:3%;
+    }
+    .footer li{
+        text-decoration: none;
+        list-style: none;
+        padding:7%;
+    }
+    .socialMedia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (min-width:768px){
+*{
+    padding: 0;
+    border:0;
+    margin:0;
+}
+.grid{
+    display: grid;
+    grid-template-areas:
+    "header       header      nav         nav        nav"
+    "hollow       hollow      hollow      semiHollow semiHollow"
+    "solidGuitar  solidGuitar solidGuitar acoustic   acoustic"
+    "footer       footer      footer      footer     footer";
+    grid-template-columns: 20vw 20vw 10vw 30vw 20vw;
+    grid-template-rows: 10vh 40vh 40vh 15vh;
+}
+.bg{
+    background-color: #205375;
+}
+.header{
+    display: flex;
+    grid-area:header;
+    background-color: #112B3C;
+    align-items: center;
+    padding-left: 3vw;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 2vw;
+    font-weight: lighter;
+    color:#F66B0E;
+}
+.header img{
+    width:12vw;
+}
+.nav{
+    grid-area:nav;
+    display:flex;
+    justify-content: space-around;
+    background-color:#112B3C;
+}
+/*Quita el subrayado del texto en la barra de navegación */
+nav li a{
+    text-decoration:none;
+    padding: 0vw 3vw 0vw 3vw;
+    color:#EFEFEF;
+    text-align: center;
+    font-size: 1.7vw;
+}
+/*Quita los bullets de la barra de navegación y centra el navList con respecto al box que los contiene*/
+.navList{
+    list-style:none;
+    text-align: center; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+}
+/*Se definen las características de los list <li>, como espaciamiento con respecto al borde, color, tipo y tamaño de la fuente, color de fondo del box*/
+.navList li{
+    font-size: 1.5em;
+    font-family: 'Bebas', sans-serif;
+    font-weight:bold;
+}
+h2{
+    font-size: 3vw;
+    font-family: 'Bebas', sans-serif;
+    font-weight:bold;
+    padding-bottom:2%;
+    color:#EFEFEF;
+}
+.hollow{
+    display:flex;
+    grid-area: hollow;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items:flex-end;
+    padding-top:30vh;
+}
+.hollow img{
+    width:40vw;
+}
+.empty{
+    grid-area:empty;
+}
+.semiHollow{
+    display:flex;
+    grid-area: semiHollow;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.semiHollow img{
+    width:40vw;
+}
+.solidGuitar{
+    display:flex;
+    grid-area:solidGuitar;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.solidGuitar img{
+    width:40vw;
+}
+.acoustic{
+    display:flex;
+    grid-area:acoustic;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.acoustic img{
+    width:40vw;
+}
+.footer{
+    grid-area:footer;
+    background-color: #112B3C;
+    font-family: 'Montserrat',sans-serif;
+    color:#EFEFEF;
+    display: flex;
+    justify-content: center;
+}
+footer a img{
+    width:4vw;
+    padding:3%;
+}
+.footer li{
+    text-decoration: none;
+    list-style: none;
+    padding:7%;
+}
+.socialMedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+@media screen and (min-width:1024px){
+    *{
+        padding: 0;
+        border:0;
+        margin:0;
+    }
+    .grid{
+        display: grid;
+        grid-template-areas:
+        "header       header      nav         nav        nav"
+        "hollow       hollow      hollow      semiHollow semiHollow"
+        "solidGuitar  solidGuitar solidGuitar acoustic   acoustic"
+        "footer       footer      footer      footer     footer";
+        grid-template-columns: 20vw 20vw 10vw 30vw 20vw;
+        grid-template-rows: 10vh 50vh 50vh 15vh;
+    }
+    .bg{
+        background-color: #205375;
+    }
+    .header{
+        display: flex;
+        grid-area:header;
+        background-color: #112B3C;
+        align-items: center;
+        padding-left: 3vw;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 2vw;
+        font-weight: lighter;
+        color:#F66B0E;
+    }
+    .header img{
+        width:9vw;
+    }
+    .nav{
+        grid-area:nav;
+        display:flex;
+        justify-content: space-around;
+        background-color:#112B3C;
+    }
+    /*Quita el subrayado del texto en la barra de navegación */
+    nav li a{
+        text-decoration:none;
+        padding: 0vw 3vw 0vw 3vw;
+        color:#EFEFEF;
+        text-align: center;
+        font-size: 1.7vw;
+    }
+    /*Quita los bullets de la barra de navegación y centra el navList con respecto al box que los contiene*/
+    .navList{
+        list-style:none;
+        text-align: center; 
+        display: flex; 
+        align-items: center;
+        justify-content: space-around;
+    }
+    /*Se definen las características de los list <li>, como espaciamiento con respecto al borde, color, tipo y tamaño de la fuente, color de fondo del box*/
+    .navList li{
+        font-size: 1.5em;
+        font-family: 'Bebas', sans-serif;
+        font-weight:bold;
+    }
+    h2{
+        font-size: 3vw;
+        font-family: 'Bebas', sans-serif;
+        font-weight:bold;
+        padding-bottom:2%;
+        color:#EFEFEF;
+    }
+    .hollow{
+        display:flex;
+        grid-area: hollow;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items:flex-end;
+        padding-top:30vh;
+    }
+    .hollow img{
+        width:40vw;
+    }
+    .empty{
+        grid-area:empty;
+    }
+    .semiHollow{
+        display:flex;
+        grid-area: semiHollow;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    .semiHollow img{
+        width:40vw;
+    }
+    .solidGuitar{
+        display:flex;
+        grid-area:solidGuitar;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .solidGuitar img{
+        width:40vw;
+    }
+    .acoustic{
+        display:flex;
+        grid-area:acoustic;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .acoustic img{
+        width:40vw;
+    }
+    .footer{
+        grid-area:footer;
+        background-color: #112B3C;
+        font-family: 'Montserrat',sans-serif;
+        color:#EFEFEF;
+        display: flex;
+        justify-content: center;
+    }
+    footer a img{
+        width:4vw;
+        padding:3%;
+    }
+    .footer li{
+        text-decoration: none;
+        list-style: none;
+        padding:7%;
+    }
+    .socialMedia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    }
+    @media screen and (min-width:1200px){
+        *{
+            padding: 0;
+            border:0;
+            margin:0;
+        }
+        .grid{
+            display: grid;
+            grid-template-areas:
+            "header       header      nav         nav        nav"
+            "hollow       hollow      hollow      semiHollow semiHollow"
+            "solidGuitar  solidGuitar solidGuitar acoustic   acoustic"
+            "footer       footer      footer      footer     footer";
+            grid-template-columns: 20vw 20vw 10vw 30vw 20vw;
+            grid-template-rows: 20vh 70vh 70vh 15vh;
+        }
+        .bg{
+            background-color: #205375;
+        }
+        .header{
+            display: flex;
+            grid-area:header;
+            background-color: #112B3C;
+            align-items: center;
+            padding-left: 3vw;
+            font-family: 'Montserrat',sans-serif;
+            font-size: 2vw;
+            font-weight: lighter;
+            color:#F66B0E;
+        }
+        .header img{
+            width: 13vw;
+        }
+        .nav{
+            grid-area:nav;
+            display:flex;
+            justify-content: space-around;
+            background-color:#112B3C;
+        }
+        /*Quita el subrayado del texto en la barra de navegación */
+        nav li a{
+            text-decoration:none;
+            padding: 0vw 3vw 0vw 3vw;
+            color:#EFEFEF;
+            text-align: center;
+            font-size: 1.7vw;
+        }
+        /*Quita los bullets de la barra de navegación y centra el navList con respecto al box que los contiene*/
+        .navList{
+            list-style:none;
+            text-align: center; 
+            display: flex; 
+            align-items: center;
+            justify-content: space-around;
+        }
+        /*Se definen las características de los list <li>, como espaciamiento con respecto al borde, color, tipo y tamaño de la fuente, color de fondo del box*/
+        .navList li{
+            font-size: 1.5em;
+            font-family: 'Bebas', sans-serif;
+            font-weight:bold;
+        }
+        h2{
+            font-size: 3vw;
+            font-family: 'Bebas', sans-serif;
+            font-weight:bold;
+            padding-bottom:2%;
+            color:#EFEFEF;
+        }
+        .hollow{
+            display:flex;
+            grid-area: hollow;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items:flex-end;
+            padding-top:30vh;
+        }
+        .hollow img{
+            width:40vw;
+        }
+        .empty{
+            grid-area:empty;
+        }
+        .semiHollow{
+            display:flex;
+            grid-area: semiHollow;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+        .semiHollow img{
+            width:40vw;
+        }
+        .solidGuitar{
+            display:flex;
+            grid-area:solidGuitar;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+        .solidGuitar img{
+            width:40vw;
+        }
+        .acoustic{
+            display:flex;
+            grid-area:acoustic;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .acoustic img{
+            width:40vw;
+        }
+        .footer{
+            grid-area:footer;
+            background-color: #112B3C;
+            font-family: 'Montserrat',sans-serif;
+            color:#EFEFEF;
+            display: flex;
+            justify-content: center;
+        }
+        footer a img{
+            width:4vw;
+            padding:3%;
+        }
+        .footer li{
+            text-decoration: none;
+            list-style: none;
+            padding:7%;
+        }
+        .socialMedia{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        }
+/*Se definen las características del título principal del home (h1), como espaciamiento con respecto al borde, color, tipo y tamaño de la fuente, color de fondo del box*/
+/*
+h1 {
+    padding-left: 0.5em;
+    color:#F66B0E;
+    background-color: #112B3C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+}
+
+nav li a{
+    text-decoration:none;
+}
+
+.navList{
+        list-style:none;
+        text-align: center;    
+}
+.navList li{
+    font-size: 1.5em;
+    font-family: 'Bebas', sans-serif;
+    font-weight:bold;
+    display:inline;
+    padding: 1.5em;
+}
+a{
+    color:#112B3C
+}
+nav ul{
+    padding-top: 0.2%;
+    background-color: #EFEFEF;
+    height: 2em;
+}
+nav li a:visited{
+    color:#112B3C
+}
+
+nav li a:hover{
+    color:#F66B0E
+}
+main div img{
+    width:650px;
+    height:433.3px;
+    padding:2%;
+    border-radius: 5em;
+}
+main div{
+    padding-top:10px;
+    text-align: center;
+}
+.hollow:hover{
+    transform: scale(1.05);
+}
+.hollow{
+    transition:transform 1s;
+}
+.semiHollow:hover{
+    transform: scale(1.05);
+}
+.semiHollow{
+    transition:transform 1s;
+}
+.solid:hover{
+    transform: scale(1.05);
+}
+.solid{
+    transition:transform 1s;
+}
+.acoustic:hover{
+    transform: scale(1.05);
+}
+.acoustic{
+    transition:transform 1s;
+}
+div h2{
+    padding-left:200px;
+    padding-right: 200px;
+    font-family:'Bebas neue', sans-serif;
+    font-size: 50px;
+    color:#EFEFEF;
+}
+main div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+main{
+    background-color: #205375;
+}
+
+footer{
+    background-color:#112B3C;
+    height: 170px;
+}
+footer h3{
+    padding: 2% 0% 2% 5%;
+    color:#EFEFEF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+footer a img{
+    width:40px;
+}*/
+/*Se distribuye el list de las redes sociales de forma horizontal*/
+.socialMedia li{
+    display:inline;
+}
+/*Se definen las posiciones para el link a Facebook*/
+.linkFacebook{
+    padding: 0% 1% 2% 5%;
+}
+/*Se definen las posiciones para el link a Twitter*/
+.linkTwitter{
+    padding:0% 1% 2% 1%;
+}
+/*Se definen las posiciones para el link a Instagram*/
+.linkInstagram{
+    padding:0% 1% 2% 1%;
+}

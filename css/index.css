@@ -1,0 +1,548 @@
+/*
+
+PALETA DE COLORES
+
+#EFEFEF White-Gray
+#F66B0E Orange
+#205375 Royal Blue
+#112B3C Dark blue
+*/
+/*mobile first*/
+@media (min-width:320px) {
+    *{
+        padding:0px;
+        margin:0px;
+    }
+    .grid{
+        display:grid;
+        grid-template-areas:
+        "encabezado"
+        "barra"
+        "seccionA"
+        "seccionB"
+        "publicidad"
+        "seccionC"
+        "seccionD"
+        "piePagina";
+        grid-template-columns: 100vw;
+        grid-template-rows: 10vh 5vh 30vh 30vh 10vh 25vh 25vh;
+    }
+    .encabezado{
+        grid-area: encabezado;
+        background-color: #112B3C;
+        display: flex;
+        align-items: center;
+        color:#F66B0E;
+        justify-content: center;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 5vw;
+        font-weight: lighter;
+    }
+    .encabezado img{
+        width:25vw;
+    }
+    .barra{
+        grid-area: barra;
+        display:flex;
+        justify-content: center;
+        background-color:#112B3C;
+        font-size: 2.5vw;
+    }
+    /*Quita el subrayado del texto en la barra de navegación */
+    nav li a{
+        text-decoration:none;
+        padding: 0vw 3vw 0vw 3vw;
+        color:#EFEFEF;
+        text-align: center;
+    }
+    /*Quita los bullets de la barra de navegación y centra el navList con respecto al box que los contiene*/
+    .navList{
+        list-style:none;
+        text-align: center; 
+        display: flex; 
+        align-items: center;
+        justify-content: space-around;
+    }
+    /*Se definen las características de los list <li>, como espaciamiento con respecto al borde, color, tipo y tamaño de la fuente, color de fondo del box*/
+    .navList li{
+        font-size: 1.5em;
+        font-family: 'Bebas', sans-serif;
+        font-weight:bold;
+        font-size: 2wv;
+    }
+    .seccionA{
+        grid-area: seccionA;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #205375;
+        padding-top:1%;
+    }
+    .seccionA iframe{
+        width:80vw;
+        height:25vh;
+    }
+    .seccionB{
+        grid-area: seccionB;
+        font-size: 2vw;
+        font-family: 'Montserrat', sans-serif;
+        color:#EFEFEF;
+        background-color: #205375;
+        display: flex;
+        text-align: justify;
+        align-items: center;
+        padding:5%;
+    }
+    .seccionC{
+        grid-area: seccionC;
+        font-size: 2vw;
+        font-family: 'Montserrat', sans-serif;
+        color:#EFEFEF;
+        background-color: #205375;
+        display: flex;
+        text-align: justify;
+        align-items: center;
+        padding:5%;
+    }
+    .seccionD{
+        grid-area: seccionD;
+        background-color: #205375;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .seccionD img{
+        width:50vw;
+    }
+    .publicidad{
+        grid-area:publicidad;
+        background-color: #205375;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .publicidad img{
+        width:40vw;
+    }
+    .piePagina{
+        grid-area:piePagina;
+        background-color: #112B3C;
+        font-family: 'Montserrat',sans-serif;
+        color:#EFEFEF;
+        display: flex;
+        justify-content: center;
+    }
+    footer a img{
+        width:4vw;
+        padding:3%;
+    }
+    .piePagina li{
+        text-decoration: none;
+        list-style: none;
+        padding:7%;
+    }
+    .socialMedia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (min-width:768px) {
+    *{
+        padding:0px;
+        margin:0px;
+    }
+    .grid{
+        display:grid;
+        grid-template-areas:
+        "encabezado"
+        "barra"
+        "seccionA"
+        "seccionB"
+        "publicidad"
+        "seccionC"
+        "seccionD"
+        "piePagina";
+        grid-template-columns: 100vw;
+        grid-template-rows: 15vh 10vh 60vh 45vh 20vh 35vh 45vh;
+    }
+    .encabezado{
+        grid-area: encabezado;
+        background-color: #112B3C;
+        display: flex;
+        align-items: center;
+        color:#F66B0E;
+        justify-content: center;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 5vw;
+        font-weight: lighter;
+    }
+    .encabezado img{
+        width:15vw;
+    }
+    .barra{
+        grid-area: barra;
+        display:flex;
+        justify-content: center;
+        background-color:#112B3C;
+        font-size: 2vw;
+    }
+    /*Quita el subrayado del texto en la barra de navegación */
+    nav li a{
+        text-decoration:none;
+        padding: 0vw 3vw 0vw 3vw;
+        color:#EFEFEF;
+        text-align: center;
+    }
+    /*Quita los bullets de la barra de navegación y centra el navList con respecto al box que los contiene*/
+    .navList{
+        list-style:none;
+        text-align: center; 
+        display: flex; 
+        align-items: center;
+        justify-content: space-around;
+    }
+    /*Se definen las características de los list <li>, como espaciamiento con respecto al borde, color, tipo y tamaño de la fuente, color de fondo del box*/
+    .navList li{
+        font-size: 1.5em;
+        font-family: 'Bebas', sans-serif;
+        font-weight:bold;
+        font-size: 2wv;
+    }
+    .seccionA{
+        grid-area: seccionA;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #205375;
+        padding-top:1%;
+    }
+    .seccionA iframe{
+        height:50vh;
+    }
+    .seccionB{
+        grid-area: seccionB;
+        font-size: 1.5vw;
+        font-family: 'Montserrat', sans-serif;
+        color:#EFEFEF;
+        background-color: #205375;
+        display: flex;
+        text-align: justify;
+        align-items: center;
+        padding:7%;
+    }
+    .seccionC{
+        grid-area: seccionC;
+        font-size: 1.5vw;
+        font-family: 'Montserrat', sans-serif;
+        color:#EFEFEF;
+        background-color: #205375;
+        display: flex;
+        text-align: justify;
+        align-items: center;
+        padding:7%;
+    }
+    .seccionD{
+        grid-area: seccionD;
+        background-color: #205375;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .seccionD img{
+        width:50vw;
+    }
+    .publicidad{
+        grid-area:publicidad;
+        background-color: #205375;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .publicidad img{
+        width:40vw;
+    }
+    .piePagina{
+        grid-area:piePagina;
+        background-color: #112B3C;
+        font-family: 'Montserrat',sans-serif;
+        color:#EFEFEF;
+        display: flex;
+        justify-content: center;
+    }
+    footer a img{
+        width:4vw;
+        padding:3%;
+    }
+    .piePagina li{
+        text-decoration: none;
+        list-style: none;
+        padding:7%;
+    }
+    .socialMedia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (min-width:1024px) {
+    *{
+        padding:0px;
+        margin:0px;
+    }
+    .grid{
+        display:grid;
+        grid-template-areas:
+        "encabezado encabezado barra      barra      barra"
+        "seccionA   seccionA   seccionB   seccionB   publicidad"
+        "seccionC   seccionC   seccionD   seccionD   publicidad"
+        "piePagina  piePagina  piePagina  piePagina  piePagina";
+        grid-template-columns: 20vw 22.5vw 22.5vw 20vw 15vw;
+        grid-template-rows: 15vh 55vh 60vh 15vh;
+    }
+    .encabezado{
+        grid-area: encabezado;
+        background-color: #112B3C;
+        display: flex;
+        align-items: center;
+        color:#F66B0E;
+        justify-content: center;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 2em;
+        font-weight: lighter;
+    }
+    .encabezado img{
+        width:12vw;
+    }
+    .barra{
+        grid-area: barra;
+        display:flex;
+        justify-content: center;
+        background-color:#112B3C;
+        font-size: 1vw;
+    }
+    /*Quita el subrayado del texto en la barra de navegación */
+    nav li a{
+        text-decoration:none;
+        padding: 0vw 3vw 0vw 3vw;
+        color:#EFEFEF;
+        text-align: center;
+    }
+    /*Quita los bullets de la barra de navegación y centra el navList con respecto al box que los contiene*/
+    .navList{
+        list-style:none;
+        text-align: center; 
+        display: flex; 
+        align-items: center;
+        justify-content: space-around;
+    }
+    /*Se definen las características de los list <li>, como espaciamiento con respecto al borde, color, tipo y tamaño de la fuente, color de fondo del box*/
+    .navList li{
+        font-size: 1.5em;
+        font-family: 'Bebas', sans-serif;
+        font-weight:bold;
+    }
+    .seccionA{
+        grid-area: seccionA;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #205375;
+    }
+    .seccionA iframe{
+        width:40vw;
+    }
+    .seccionB{
+        grid-area: seccionB;
+        font-size: 1.1vw;
+        font-family: 'Montserrat', sans-serif;
+        color:#EFEFEF;
+        background-color: #205375;
+        display: flex;
+        text-align: justify;
+        align-items: center;
+        padding:1%;
+    }
+    .seccionC{
+        grid-area: seccionC;
+        color:#EFEFEF;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #205375;
+        display: flex;
+        text-align: justify;
+        align-items: center;
+        padding:4%;
+        font-size: 1.1vw;
+    }
+    .seccionD{
+        grid-area: seccionD;
+        background-color: #205375;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .seccionD img{
+        width:38vw;
+    }
+    .publicidad{
+        grid-area:publicidad;
+        background-color: #205375;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .publicidad img{
+        width:10vw;
+    }
+    .piePagina{
+        grid-area:piePagina;
+        background-color: #112B3C;
+        font-family: 'Montserrat',sans-serif;
+        color:#EFEFEF;
+        display: flex;
+        justify-content: center;
+    }
+    footer a img{
+        width:4vw;
+        padding:3%;
+    }
+    .piePagina li{
+        text-decoration: none;
+        list-style: none;
+        padding:7%;
+    }
+    .socialMedia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (min-width:1208px) {
+    *{
+        padding:0px;
+        margin:0px;
+    }
+    .grid{
+        display:grid;
+        grid-template-areas:
+        "encabezado encabezado barra      barra      barra"
+        "seccionA   seccionA   seccionB   seccionB   publicidad"
+        "seccionC   seccionC   seccionD   seccionD   publicidad"
+        "piePagina  piePagina  piePagina  piePagina  piePagina";
+        grid-template-columns: 20vw 22.5vw 22.5vw 20vw 15vw;
+        grid-template-rows: 15vh 55vh 60vh 15vh;
+    }
+    .encabezado{
+        grid-area: encabezado;
+        background-color: #112B3C;
+        display: flex;
+        align-items: center;
+        color:#F66B0E;
+        justify-content: center;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 2em;
+        font-weight: lighter;
+    }
+    .encabezado img{
+        width:9vw;
+    }
+    .barra{
+        grid-area: barra;
+        display:flex;
+        justify-content: center;
+        background-color:#112B3C;
+        font-size: 1vw;
+    }
+    /*Quita el subrayado del texto en la barra de navegación */
+    nav li a{
+        text-decoration:none;
+        padding: 0vw 3vw 0vw 3vw;
+        color:#EFEFEF;
+        text-align: center;
+    }
+    /*Quita los bullets de la barra de navegación y centra el navList con respecto al box que los contiene*/
+    .navList{
+        list-style:none;
+        text-align: center; 
+        display: flex; 
+        align-items: center;
+        justify-content: space-around;
+    }
+    /*Se definen las características de los list <li>, como espaciamiento con respecto al borde, color, tipo y tamaño de la fuente, color de fondo del box*/
+    .navList li{
+        font-size: 1.5em;
+        font-family: 'Bebas', sans-serif;
+        font-weight:bold;
+    }
+    .seccionA{
+        grid-area: seccionA;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #205375;
+    }
+    .seccionB{
+        grid-area: seccionB;
+        font-size: 0.9vw;
+        font-family: 'Montserrat', sans-serif;
+        color:#EFEFEF;
+        background-color: #205375;
+        display: flex;
+        text-align: justify;
+        align-items: center;
+        padding:1%;
+    }
+    .seccionC{
+        grid-area: seccionC;
+        color:#EFEFEF;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #205375;
+        display: flex;
+        text-align: justify;
+        align-items: center;
+        padding:4%;
+        font-size: 1vw;
+    }
+    .seccionD{
+        grid-area: seccionD;
+        background-color: #205375;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .seccionD img{
+        width:38vw;
+    }
+    .publicidad{
+        grid-area:publicidad;
+        background-color: #205375;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .publicidad img{
+        width:10vw;
+    }
+    .piePagina{
+        grid-area:piePagina;
+        background-color: #112B3C;
+        font-family: 'Montserrat',sans-serif;
+        color:#EFEFEF;
+        display: flex;
+        justify-content: center;
+    }
+    footer a img{
+        width:4vw;
+        padding:3%;
+    }
+    .piePagina li{
+        text-decoration: none;
+        list-style: none;
+        padding:7%;
+    }
+    .socialMedia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
