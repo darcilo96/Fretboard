@@ -194,6 +194,9 @@ PALETA DE COLORES
         color:#EFEFEF;
         text-align: center;
     }
+    nav li a:hover{
+        color:#F66B0E;
+    }
     /*Quita los bullets de la barra de navegación y centra el navList con respecto al box que los contiene*/
     .navList{
         list-style:none;
@@ -328,6 +331,9 @@ PALETA DE COLORES
         color:#EFEFEF;
         text-align: center;
     }
+    nav li a:hover{
+        color:#F66B0E;
+    }
     /*Quita los bullets de la barra de navegación y centra el navList con respecto al box que los contiene*/
     .navList{
         list-style:none;
@@ -460,6 +466,9 @@ PALETA DE COLORES
         color:#EFEFEF;
         text-align: center;
     }
+    nav li a:hover{
+        color:#F66B0E;
+    }
     /*Quita los bullets de la barra de navegación y centra el navList con respecto al box que los contiene*/
     .navList{
         list-style:none;
@@ -470,7 +479,7 @@ PALETA DE COLORES
     }
     /*Se definen las características de los list <li>, como espaciamiento con respecto al borde, color, tipo y tamaño de la fuente, color de fondo del box*/
     .navList li{
-        font-size: 1.5em;
+        font-size: 1.8em;
         font-family: 'Bebas', sans-serif;
         font-weight:bold;
     }
@@ -532,7 +541,7 @@ PALETA DE COLORES
         justify-content: center;
     }
     footer a img{
-        width:4vw;
+        width:3.5vw;
         padding:3%;
     }
     .piePagina li{
