@@ -2,286 +2,46 @@
 
 PALETA DE COLORES
 
-#EFEFEF White-Gray
+#EFEFEFWhite-Gray
 #F66B0E Orange
 #205375 Royal Blue
 #112B3C Dark blue
 */
-
-/*Reestablece los valores nulos para márgenes, bordes y espaciamientos en cualquier navegador*/
-*{
-    padding: 0;
-    border:0;
-    margin:0;
+/*mobile first*/
+div.container-fluid.search{
+    display: flex;
+    justify-content: center;
 }
-
-/*Se definen las características del título principal del home (h1), como espaciamiento con respecto al borde, color, tipo y tamaño de la fuente, color de fondo del box*/
-h1 {
-    padding-left: 0.5em;
-    color:#F66B0E;
-    background-color: #112B3C;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3em;
+.navbar-brand{
+    display:flex;
+    justify-content: center;
+    margin-left:2rem;
+    font-size: 2em;
 }
-/*Quita el subrayado del texto en la barra de navegación */
-nav li a{
-    text-decoration:none;
+div.collapse.navbar-collapse{
+    display:flex;
+    justify-content: center;
 }
-/*Quita los bullets de la barra de navegación y centra el navList con respecto al box que los contiene*/
-.navList{
-        list-style:none;
-        text-align: center;    
+div.collapse.navbar-collapse li{
+    margin:0.6rem;
 }
-/*Se definen las características de los list <li>, como espaciamiento con respecto al borde, color, tipo y tamaño de la fuente, color de fondo del box*/
-.navList li{
-    font-size: 1.5em;
-    font-family: 'Bebas', sans-serif;
-    font-weight:bold;
-    display:inline;
-    padding: 1.5em;
+div.collapse.navbar-collapse li a{
+    font-size: 1.6em;
 }
-a{
-    color:#112B3C
-}
-/*Define algunas propiedades de la lista no ordenada <ul>, como espaciamiento superior con respecto al borde, color de fondo y altura del box*/
-nav ul{
-    padding-top: 0.2%;
+input.form-control{
     background-color: #EFEFEF;
-    height: 2em;
+    width:20vw;
+    border-radius: 2em;
+    border-color: gray;
+    border-width: 0.1em;
 }
-/*Permite que cuando ocurra el evento de que el link ya haya sido visitado, no quede en color violeta, sino que permanezca del color original*/
-nav li a:visited{
-    color:#112B3C
-}
-/*Hace que cuando ocurra el evento de pasar el mouse sobre el texto de la barra de navegación, este cambie de color*/
-nav li a:hover{
-    color:#F66B0E
-}
-/*Define el color de fondo y de tipografía para el cuerpo de la página*/
-main{
-    background-color:#205375 ;
+button.btn{
+    background-color: transparent;
     color:#EFEFEF;
+    border-color: #EFEFEF;
 }
-/*Define parámetros geométricos de los títulos del main*/
-H2{
-    padding-top:30px;
-    font-family: 'Bebas neue',sans-serif;
-    padding-left: 460px;
-    font-size:3.5vw;
-}
-/*Define parámetros de posición de los contenedores div*/
-main div{
-    padding-left:30%;
-    padding-top:1%;
-    padding-bottom:1%;
-}
-/*Define la geometría y bordes redondeados en los input*/
-input{
-    width:300px;
-    border-radius: 3px;
-}
-/*Define geometría, posición y tipografía del div del usuario para login*/
-.userLogin{
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding:20px 0px 20px 150px;
-    justify-content: space-around;
-    width: 600px;
-    position:relative;
-    left:300px;
-    font-size:20px;    
-}
-/*Define geometría, posición y tipografía del div del password para login*/
-.pwdLogin{
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding:20px 0px 20px 153px;
-    justify-content: space-around;
-    width: 600px;
-    position:relative;
-    left:300px;
-    font-size:20px;
-}
-/*Define geometría, posición y tipografía del texto "olvidaste tu contraseña?"*/
-.forgotPwd{
-    font-family: 'montserrat',sans-serif;
-    font-weight: bold;
-    position: relative;
-    left:117px;
-}
-/*Quita el subrayado de los links y los cambia de color*/
-.forgotPwd a{
-    text-decoration: none;
-    color:#EFEFEF;
-}
-/*Define geometría, posición y tipografía del botón login*/
-.submitLogin{
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding:20px 20px 20px 65px;
-    text-align: center;
-    width: 200px;
-    position:relative;
-    left:120px;
-    font-size:20px;
-    border-radius: 10px;
-}
-/*Define geometría, posición y tipografía del div del usuario para Sign-in*/
-.userSign{
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding:20px 0px 20px 150px;
-    justify-content: space-around;
-    width: 600px;
-    position:relative;
-    left:300px;
-    font-size:20px;
-}
-/*Define geometría, posición y tipografía del div del password para Sign-in*/
-.pwdSign{
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding:20px 0px 20px 153px;
-    justify-content: space-around;
-    width: 600px;
-    position:relative;
-    left:300px;
-    font-size:20px;
-}
-/*Define geometría, posición y tipografía del div del nombre para Sign-in*/
-.nameSign{
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding:20px 20px 20px 150px;
-    justify-content: space-around;
-    width: 642px;
-    position:relative;
-    left:300px;
-    font-size:20px;
-}
-/*Define geometría, posición y tipografía del div del apellido para Sign-in*/
-.lnameSign{
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding:20px 20px 20px 150px;
-    justify-content: space-around;
-    width: 595px;
-    position:relative;
-    left:300px;
-    font-size:20px;
-}
-/*Define geometría, posición y tipografía del div del e-mail para Sign-in*/
-.emailSign{
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding:20px 20px 20px 150px;
-    justify-content: space-around;
-    width: 638px;
-    position:relative;
-    left:300px;
-    font-size:20px;
-}
-/*Define geometría, posición y tipografía del div del teléfono para Sign-in*/
-.phoneSign{
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding:20px 20px 20px 150px;
-    justify-content: space-around;
-    width: 638px;
-    position:relative;
-    left:300px;
-    font-size:20px;
-}
-/*Define geometría, posición y tipografía del div del país para Sign-in*/
-.countrySign{
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding:20px 20px 20px 150px;
-    justify-content: space-around;
-    width: 623px;
-    position:relative;
-    left:300px;
-    font-size:20px;
-}
-/*Define geometría, posición y tipografía del div del botón Sign-in*/
-.submitSign{
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding:20px 20px 20px 65px;
-    text-align: center;
-    width: 200px;
-    position:relative;
-    left:120px;
-    font-size:20px;
-    border-radius: 10px;
-}
-/*Define parámetros de forma para los input del main*/
-main input{
-    font-family: 'Montserrat', sans-serif;
-    background-color: #112B3C;
-    color:#EFEFEF;
-    padding-left: 150px;
-}
-/*Define tipografía y posición para el texto de "Don't you have an account yet?"*/
-.createAccount{
-    font-family: 'montserrat',sans-serif;
-    font-weight: bold;
-    position: relative;
-    left:460px;
-    color:#EFEFEF;
-}
-/*Define el color de fondo y la altura del footer*/
-footer{
-    background-color:#112B3C;
-    height: 170px;
-}
-/*Se definen los parámetros de la tipografía del título del footer*/
-footer h3{
-    padding: 2% 0% 2% 5%;
-    color:#EFEFEF;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-}
-/*Se definen las dimensiones de los vectores inscritos en el footer*/
-footer a img{
-    width:40px;
-}
-/*Se distribuye el list de las redes sociales de forma horizontal*/
-.socialMedia li{
-    display:inline;
-}
-/*Se definen las posiciones para el link a Facebook*/
-.linkFacebook{
-    padding: 0% 1% 2% 5%;
-}
-/*Se definen las posiciones para el link a Twitter*/
-.linkTwitter{
-    padding:0% 1% 2% 1%;
-}
-/*Se definen las posiciones para el link a Instagram*/
-.linkInstagram{
-    padding:0% 1% 2% 1%;
+button.btn:hover{
+    background-color:#EFEFEF;
+    color:#112B3C;
+    border-color: transparent;
 }

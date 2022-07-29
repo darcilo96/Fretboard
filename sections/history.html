@@ -4,79 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/history.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <title>FRETBOARD</title>
 </head>
 <body>
     <header>
-        <h1>FRETBOARD.COM</h1>
-        <!--Vincula las páginas que componen el sitio web entre sí-->
-        <nav>
-            <ul class="navList">
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="Guitars.html">Guitars</a>
-                </li>
-                <li>
-                    <a href="Gear.html">Pedals & Amplifiers</a>
-                </li>
-                <li>
-                    <a href="History.html">History</a>
-                </li>
-                <li>
-                    <a href="Sign-in.html">Sign-in</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark row">
+            <div class="container-fluid  row col-8">
+                <img class="navbar-brand col-3" src="../resources/vectors/logo_1.svg" href="../index.html">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-9" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link home" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link guitars" href="../sections/guitars.html">Guitars</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../sections/gear.html">Gear</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../sections/history.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../sections/sign-in.html">Sign-up</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="container-fluid search col-4">
+                <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </nav>
     </header>
-    <main>
-        <!--Cuerpo de la página-->
-        <div>
-            <img src="../resources/img/TubeScreamer_TS9.png" alt="Tube Screamer TS09">
-                <div class="ppalParrafo">
-                    <h2>THE 70's TONE</h2><br>
-                    <p>Around 1982 until 1985 the Ibanez pedals were repackaged and the 9-series of effects were made. The most popular was the TS-9 tube screamer,
-                    which is almost the same as the TS-808 internally. Externally the on/off switch grew to fill about 1/3 of the effect. The main change in the TS-9
-                    circuit is in the output section. This caused the tube screamer to be a bit brighter and less "smooth". The Edge from U2 uses a TS9 for most of his
-                    overdrive tones, as do countless other famous rock and blues players. In later years the TS-9s were put together with other op-amp chips, instead of
-                    the JRC-4558 which is called for in the schematics. Some of these sound BAD, especially the JRC 2043DD chips. Many used the Toshiba TA75558 which was
-                    continued on the reissue. If you have an original TS9 with the 2043 chip, our 808 mods will make a huge difference in tone.</p>
-                </div>
-        </div>
-        <div>
-            <img src="../resources/img/JimiHendrix.jpg" alt="Jimmi Hendrix">
-                <div class="ppalParrafo">
-                    <h2>HENDRIX AS A LEGEND</h2><br>
-                    <p>The lyrics to “Little Wing” are as mysterious and free-flowing as the song’s guitar melody,
-                    with Hendrix singing about this special cosmic woman that he encounters. This woman embodies the
-                    wild spirit of mother nature and enters his life as a bright and shining beam, bringing along with
-                    her the positivity of her spirit.<br><br>
-                    Jimi conjures up the clouds in the intro with a unique flanging to his guitar tone, which is done with
-                    the use of a Leslie cabinet. Hendrix was one of the first to use an effect like this, with Buddy Guy coming
-                    before him on Junior Wells’ 1965 recording of “Hoodoo Man Blues”, and it has since been used by many guitarists
-                    including, of course, Stevie Ray Vaughn as well as Pearl Jam’s Eddie Vedder on the song “Yellow Ledbetter.”</p>
-                </div>
-        </div>
-    </main>
-    <footer>
-        <!--Pie de página-->
-        <h3>Follow us on Social Media</h3>
-        <!--Links de acceso a las redes sociales de la página-->
-        <ul class="socialMedia">
-            <li class="linkFacebook">
-                <a href="https://www.facebook.com" target="_blank"><img src="../resources/vectors/fb.svg"></a>
-            </li>
-            <li class="linkTwitter">
-                <a href="https:/www.twitter.com" target="_blank"><img src="../resources/vectors/twt.svg"></a>
-            </li>
-            <li class="linkInstagram">
-                <a href="https:/www.instagram.com" target="_blank"><img src="../resources/vectors/ig.svg"></a>
-            </li>
-        </ul>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
