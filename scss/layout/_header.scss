@@ -1,0 +1,42 @@
+.navbar{
+    div{
+        #navbarNav{
+            .search{
+                display: flex;
+                justify-content: center;
+                .navbar-brand{
+                    display:flex;
+                    justify-content: center;
+                    margin-left:2%;
+                    .collapse.navbar-collapse.col-9{
+                        display:flex;
+                        justify-content: center;
+                        li{
+                            margin:0.6rem;
+                            a{
+                                font-size: 1.8em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+input.form-control{
+    background-color: #EFEFEF;
+    width:20vw;
+    border-radius: 2em;
+    border-color: gray;
+    border-width: 0.1em;
+}
+button.btn{
+    background-color: transparent;
+    color:#EFEFEF;
+    border-color: #EFEFEF;
+    &:hover{
+        background-color:#EFEFEF;
+        color:#112B3C;
+        border-color: transparent;
+    }
+}

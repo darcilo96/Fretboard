@@ -1,0 +1,90 @@
+.navbar div #navbarNav .search {
+  display: flex;
+  justify-content: center;
+}
+.navbar div #navbarNav .search .navbar-brand {
+  display: flex;
+  justify-content: center;
+  margin-left: 2%;
+}
+.navbar div #navbarNav .search .navbar-brand .collapse.navbar-collapse.col-9 {
+  display: flex;
+  justify-content: center;
+}
+.navbar div #navbarNav .search .navbar-brand .collapse.navbar-collapse.col-9 li {
+  margin: 0.6rem;
+}
+.navbar div #navbarNav .search .navbar-brand .collapse.navbar-collapse.col-9 li a {
+  font-size: 1.8em;
+}
+
+input.form-control {
+  background-color: #EFEFEF;
+  width: 20vw;
+  border-radius: 2em;
+  border-color: gray;
+  border-width: 0.1em;
+}
+
+button.btn {
+  background-color: transparent;
+  color: #EFEFEF;
+  border-color: #EFEFEF;
+}
+button.btn:hover {
+  background-color: #EFEFEF;
+  color: #112B3C;
+  border-color: transparent;
+}
+
+main {
+  background: linear-gradient(#212429 30%, darkslategrey 60%);
+  Color: white;
+}
+main .container .row div.col-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+}
+main .container .row div.col-6 .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+main .container .row div.col-6 .col p {
+  font-size: 0.7em;
+  text-align: justify;
+}
+
+div.col-6 img {
+  width: 33vw;
+  padding-bottom: 2vh;
+}
+
+div.piePagina {
+  grid-area: piePagina;
+  background-color: #212429;
+  font-family: "Montserrat", sans-serif;
+  color: #EFEFEF;
+  display: flex;
+  justify-content: center;
+}
+
+footer a img {
+  width: 3.5vw;
+  padding: 3%;
+}
+
+.piePagina li {
+  text-decoration: none;
+  list-style: none;
+  padding: 7%;
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */

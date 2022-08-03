@@ -1,0 +1,22 @@
+div.piePagina{
+    grid-area:piePagina;
+    background-color: #212429;
+    font-family: 'Montserrat',sans-serif;
+    color:#EFEFEF;
+    display: flex;
+    justify-content: center;
+}
+footer a img{
+    width:3.5vw;
+    padding:3%;
+}
+.piePagina li{
+    text-decoration: none;
+    list-style: none;
+    padding:7%;
+}
+.socialMedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,28 @@
+main{
+    background:linear-gradient(#212429 30%,darkslategrey 60%);
+    Color:white;
+    .container{
+        .row{
+            div.col-6{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                width:40vw;
+                .col{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    p{
+                        font-size: 0.7em;
+                        text-align: justify;
+                    }
+                }
+            }   
+        }   
+    }
+}   
+div.col-6 img{
+    width:33vw;
+    padding-bottom: 2vh;
+}
