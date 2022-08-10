@@ -1,5 +1,5 @@
 main{
-    background:linear-gradient(#212429 30%,darkslategrey 60%);
+    background: linear-gradient(#212429 30%,darkslategrey 60%);
     Color:white;
     .container{
         .row{
@@ -14,8 +14,7 @@ main{
                     justify-content: center;
                     align-content: center;
                     p{
-                        font-size: 0.7em;
-                        text-align: justify;
+                        @include main(0.7em,#EFEFEF,justify)
                     }
                 }
             }   

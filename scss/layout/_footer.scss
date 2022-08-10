@@ -1,11 +1,3 @@
-div.piePagina{
-    grid-area:piePagina;
-    background-color: #212429;
-    font-family: 'Montserrat',sans-serif;
-    color:#EFEFEF;
-    display: flex;
-    justify-content: center;
-}
 footer a img{
     width:3.5vw;
     padding:3%;
@@ -19,4 +11,11 @@ footer a img{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+div.piePagina{
+    grid-area:piePagina;
+    background-color: #212429;
+    font-family: 'Montserrat',sans-serif;
+    color:#EFEFEF;
+    @extend .socialMedia;
 }
